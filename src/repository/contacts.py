@@ -1,7 +1,7 @@
 from sqlalchemy.future import select
 from sqlalchemy.ext.asyncio import AsyncSession
-from models import Contact
-from schemas import ContactCreate, ContactUpdate
+from src.database.models import Contact
+from src.schemas.schemas import ContactCreate, ContactUpdate
 from datetime import date, timedelta
 
 async def get_contact(db: AsyncSession, contact_id: int):
